@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Get to <code>999999999999999999</code></h3>
+        </div>
+        <div id="main-content">
+            <div id="counter-and-buttons">
+                <div id="main-counter">
+                    <code id="counter-display"></code>
+                </div>
+                <div id="main-buttons">
+                    <button id="minus-1">-</button>
+                    <button id="plus-1">+</button>
+                </div>
+            </div>
+            <div id="extra-buttons-1">
+                <button id="minus-30">-30</button>
+                <button id="minus-111">-111</button>
+                <button id="minus-333">-333</button>
+                <button id="minus-1500">-1500</button>
+                <button id="minus-10000">-10000</button>
+                <button id="minus-100000000000000000">-100000000000000000</button>
+            </div>
+            <div id="extra-buttons-2">
+                <button id="set-counter-toggle">Set Counter</button>
+                <button id="restart">Restart</button>
+            </div>
+            <form onsubmit="false" id="set-counter-form">
+                <label for="set-counter-input">Set Counter Manually:</label>
+                <input
+                    id="set-counter-input"
+                    name="counterValue"
+                    type="number"
+                    min="0"
+                    max="999999999999999990"
+                />
+                <button id="set-counter-confirm">Confirm</button>
+                <button id="set-counter-cancel">Cancel</button>
+            </form>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
